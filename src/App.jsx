@@ -1,4 +1,4 @@
-export default function EyelineLanding() {
+export default function App() {
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Navigation */}
@@ -119,5 +119,5 @@ export default function EyelineLanding() {
         </div>
       </footer>
     </div>
-  );
+  )
 }
