@@ -58,7 +58,7 @@ export default function App() {
               We're building UMOT—production-ready detection + tracking + Re-ID in one unified API.
             </p>
             <p className="text-sm text-gray-500 max-w-2xl mx-auto">
-              <strong className="text-gray-300">Current Status:</strong> Architecture design phase. First alpha release targeted for March 2025.
+              <strong className="text-gray-300">Current Status:</strong> Architecture design phase. First alpha release targeted for March 2026.
               Follow along as we build this in public.
             </p>
           </div>
@@ -126,7 +126,7 @@ pipeline = Pipeline(
     detector='yolov8x',
     tracker='bytetrack',
     reid='market1501',
-    backend='eyeline'  # ← Cloud scaling (2025)
+    backend='eyeline'  # ← Cloud scaling (2026)
 )`}
               </pre>
             </div>
@@ -195,7 +195,7 @@ pipeline = Pipeline(
                   <h3 className="text-xl font-bold">Phase 1: Core UMOT</h3>
                   <span className="text-xs px-2 py-1 bg-amber-500/20 text-amber-400 rounded-full">Current Focus</span>
                 </div>
-                <p className="text-gray-400 text-sm mb-3">January - March 2025</p>
+                <p className="text-gray-400 text-sm mb-3">January - March 2026</p>
                 <ul className="space-y-2 text-sm text-gray-300">
                   <li className="flex items-start gap-2">
                     <span className="text-gray-500 mt-1">○</span>
@@ -223,9 +223,9 @@ pipeline = Pipeline(
               <div className="ml-6">
                 <div className="flex items-center gap-3 mb-2">
                   <h3 className="text-xl font-bold">Phase 2: Production Ready</h3>
-                  <span className="text-xs px-2 py-1 bg-gray-700 text-gray-400 rounded-full">Q2 2025</span>
+                  <span className="text-xs px-2 py-1 bg-gray-700 text-gray-400 rounded-full">Q2 2026</span>
                 </div>
-                <p className="text-gray-400 text-sm mb-3">April - June 2025</p>
+                <p className="text-gray-400 text-sm mb-3">April - June 2026</p>
                 <ul className="space-y-2 text-sm text-gray-400">
                   <li className="flex items-start gap-2">
                     <span className="text-gray-600 mt-1">○</span>
@@ -253,9 +253,9 @@ pipeline = Pipeline(
               <div className="ml-6">
                 <div className="flex items-center gap-3 mb-2">
                   <h3 className="text-xl font-bold">Phase 3: Cloud Scale</h3>
-                  <span className="text-xs px-2 py-1 bg-gray-700 text-gray-400 rounded-full">Q3 2025</span>
+                  <span className="text-xs px-2 py-1 bg-gray-700 text-gray-400 rounded-full">Q3 2026</span>
                 </div>
-                <p className="text-gray-400 text-sm mb-3">July - September 2025</p>
+                <p className="text-gray-400 text-sm mb-3">July - September 2026</p>
                 <ul className="space-y-2 text-sm text-gray-400">
                   <li className="flex items-start gap-2">
                     <span className="text-gray-600 mt-1">○</span>
@@ -347,7 +347,7 @@ pipeline = Pipeline(
                     Coming Soon
                   </button>
                 </div>
-                <p className="text-xs text-gray-600 mt-2">Email signup will be available February 2025</p>
+                <p className="text-xs text-gray-600 mt-2">Email signup will be available February 2026</p>
               </div>
 
               {/* Alternative Actions */}
@@ -410,7 +410,7 @@ pipeline = Pipeline(
               <span className="font-bold">Eyeline</span>
             </div>
             <p className="text-sm text-gray-400 max-w-md mx-auto">
-              Building the future of multi-object tracking. Coming Q2 2025.
+              Building the future of multi-object tracking. Coming Q2 2026.
             </p>
           </div>
           
