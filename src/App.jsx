@@ -41,7 +41,7 @@ export default function App() {
           <div className="text-center mb-8">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-500/10 border border-amber-500/30">
               <span className="w-2 h-2 bg-amber-500 rounded-full animate-pulse"></span>
-              <span className="text-amber-400 text-sm font-medium">Coming Q2 2025 • Join the journey from Day 1</span>
+              <span className="text-amber-400 text-sm font-medium">Coming Q2 2026 • Join the journey from Day 1</span>
             </div>
           </div>
 
