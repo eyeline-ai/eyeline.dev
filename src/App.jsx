@@ -1,5 +1,30 @@
 import { useState, useEffect } from 'react'
 
+// UMOT Logo Component
+const UmotLogo = ({ size = 32, className = "" }) => (
+  <svg 
+    width={size} 
+    height={size} 
+    viewBox="0 0 32 32" 
+    fill="none" 
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+  >
+    <defs>
+      <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stopColor="#6366f1"/>
+        <stop offset="100%" stopColor="#8b5cf6"/>
+      </linearGradient>
+    </defs>
+    <rect width="32" height="32" rx="8" fill="url(#logoGrad)"/>
+    <path d="M8 20 L12 12 L20 16 L24 10" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" opacity="0.4"/>
+    <circle cx="12" cy="12" r="3" fill="white"/>
+    <circle cx="20" cy="16" r="3" fill="white"/>
+    <circle cx="24" cy="10" r="2.5" fill="white" opacity="0.7"/>
+    <circle cx="8" cy="20" r="2" fill="white" opacity="0.5"/>
+  </svg>
+)
+
 export default function App() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [activeTab, setActiveTab] = useState('local')
@@ -40,7 +65,7 @@ export default function App() {
       <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-zinc-950/90 backdrop-blur-xl border-b border-zinc-800/50' : ''}`}>
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
           <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-indigo-500 to-violet-600 flex items-center justify-center text-sm font-bold shadow-lg shadow-indigo-500/20">U</div>
+            <UmotLogo size={36} className="shadow-lg shadow-indigo-500/20" />
             <span className="font-semibold text-lg">UMOT</span>
             <span className="text-xs px-2.5 py-1 rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/20 font-medium">Q2 2026</span>
           </div>
@@ -280,8 +305,8 @@ export default function App() {
                 </div>
 
                 <div className="text-center">
-                  <div className="w-20 h-20 mx-auto rounded-2xl bg-gradient-to-br from-indigo-500 to-violet-600 flex items-center justify-center mb-3 shadow-lg shadow-indigo-500/25">
-                    <span className="text-2xl font-bold text-white">U</span>
+                  <div className="w-20 h-20 mx-auto rounded-2xl bg-gradient-to-br from-indigo-500 to-violet-600 flex items-center justify-center mb-3 shadow-lg shadow-indigo-500/25 overflow-hidden">
+                    <UmotLogo size={80} className="scale-100" />
                   </div>
                   <p className="text-sm font-medium">UMOT</p>
                   <p className="text-xs text-zinc-500">Tracking layer</p>
@@ -537,7 +562,7 @@ for frame in video:
               <div className="flex items-center justify-between px-6 py-4 border-b border-zinc-800 bg-zinc-900/80">
                 <div className="flex items-center gap-4">
                   <div className="flex items-center gap-2">
-                    <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-indigo-500 to-violet-600 flex items-center justify-center text-xs font-bold">U</div>
+                    <UmotLogo size={28} />
                     <span className="font-medium text-sm">UMOT Cloud</span>
                   </div>
                   <div className="h-4 w-px bg-zinc-800"></div>
@@ -911,7 +936,7 @@ tracks = pipeline.update(detections, embeddings)` },
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-8">
             <div>
               <div className="flex items-center gap-2 mb-2">
-                <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-indigo-500 to-violet-600 flex items-center justify-center text-xs font-bold">U</div>
+                <UmotLogo size={28} />
                 <span className="font-semibold">UMOT</span>
               </div>
               <p className="text-sm text-zinc-500">
